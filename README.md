@@ -75,10 +75,18 @@ $ sudo ldconfig -v
 You can edit with atom or any other editor
 OpenSSL is installed in the '/usr/local/ssl' directory.
 
+10. Install Python
+```
+$ sudo apt-get update
+$ sudo apt-get install python3.8
+```
 
 ## How to run
+```
+gcc XXXXX -o XXXXXX.c -lcrypto
+```
 
-
+where XXXXX filename
 
 ## Acknowledgments
 * Assignment for cryptography

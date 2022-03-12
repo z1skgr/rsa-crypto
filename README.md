@@ -9,11 +9,10 @@
 * [Acknowledgements](#acknowledgments)
 
 ## General Information
-RSA is an asymmetric cryptographic algorithm where each user has two keys, one 
-private and one public.
-
-It uses data from the theory of numbers and in 
-combination with the particularly large keys achieves encryption in 
+RSA is an asymmetric cryptographic algorithm where each user has two keys
+* private 
+* public.
+It uses data from the theory of numbers and in combination with the particularly large keys achieves encryption in 
 a balance arithmetic that makes decryption by factorization impossible.
 
 
@@ -78,11 +77,15 @@ OpenSSL is installed in the `'/usr/local/ssl'` directory.
 
 
 ## How to run
+Any `.c` file can be executed as
 ```
 gcc XXXXX -o XXXXXX.c -lcrypto
 ```
 
 where `XXXXX` filename
+
+
+
 
 ## Acknowledgments
 * Assignment for cryptography

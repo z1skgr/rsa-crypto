@@ -15,6 +15,27 @@ RSA is an asymmetric cryptographic algorithm where each user has two keys
 It uses data from the theory of numbers and in combination with the particularly large keys achieves encryption in 
 a balance arithmetic that makes decryption by factorization impossible.
 
+### bn_sample_12.c
+1. Create a private key[^4]
+
+|   | Description |
+| ------------- | ------------- |
+| p  | Prime  |
+| q  | Prime  |
+| e  | number |
+| n  |  p * q |
+| e,n  |  Public key |
+| d |  Private key |
+    
+
+2. Message encryption
+
+### bn_sample_34.c
+1. Message decryption
+2. Message signing
+
+### bn_sample_5.c
+1. Signature Verification
 
 ## Setup
 Large numbers **bn[^1]** (multiprecision integer arithmetics) library provided by the **openssl [^2]**
@@ -93,3 +114,4 @@ where `XXXXX` filename
 [^1]: BIGNUM can represent every great number, see https://www.openssl.org/docs/man1.0.2/man3/bn.html
 [^2]: https://www.openssl.org
 [^3]: Make sure install version ubuntu x32 architecture compatible with SEEDUbuntu.
+[^4]: For simplicity, we use numbers 128 bits. Must be 512.

@@ -9,7 +9,7 @@
 * [Acknowledgements](#acknowledgments)
 
 ## General Information
-RSA is an asymmetric cryptographic algorithm where each user has two keys
+__RSA__ is an asymmetric cryptographic algorithm where each user has two keys
 * private 
 * public
 

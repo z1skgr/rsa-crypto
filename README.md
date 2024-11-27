@@ -16,8 +16,9 @@ __RSA__ is an asymmetric cryptographic algorithm where each user has two keys
 It uses data from the theory of numbers and in combination with the particularly large keys achieves encryption in 
 a balance arithmetic that makes decryption by factorization impossible.
 
-### bn_sample_12.c
+### bn_act_1 & 2.c
 1. Create a private key[^4]
+2. Message encryption
 
 |   | Description |
 | ------------- | ------------- |
@@ -29,11 +30,17 @@ a balance arithmetic that makes decryption by factorization impossible.
 | d |  Private key |
     
 Calculations
-$public_key = (e,n)
+
+$public_{key} = (e,n)$
+
 $p = 953AAB9B3F23ED593FBDC690CA10E703$
+
 $q = C34EFC7C4C2369164E953553CDF94945$
+
 $e = 0D88C3$
+
 $n = p * q$
+
 $M = "message"$
 
 #### Act 
@@ -41,25 +48,28 @@ $M = "message"$
 * Name surname encryption
 
 
-2. Message encryption
 
-### bn_sample34_1.c
+### bn_act_3 & 4_1.c
 1. Message decryption
 2. Message signing
 
 Calculations
 
 $d = 74D806F9F3A62BAE331FFE3F0A68AFE35B3D2E4794148AACBC26AA381CD7D30D$
+
 $e = 010001 (this hex value equals to decimal 65537) $
+
 $n = DCBFFE3E51F62E09CE7032E2677A78946A849DC4CDDE3A4D0CB81629242FB1A5$
+
 $M = "message"$
+
 $M` = "messag"$
 
 #### Act 
 * Decrypt message using private and public key
 * Message signing to two different texts
 
-### bn_sample4_2.c
+### bn_act_4-2.c
 1. Signature Verification
 
 Calculations

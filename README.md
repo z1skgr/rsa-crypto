@@ -28,15 +28,50 @@ a balance arithmetic that makes decryption by factorization impossible.
 | e,n  |  Public key |
 | d |  Private key |
     
+Calculations
+$public_key = (e,n)
+$p = 953AAB9B3F23ED593FBDC690CA10E703$
+$q = C34EFC7C4C2369164E953553CDF94945$
+$e = 0D88C3$
+$n = p * q$
+$M = "message"$
+
+#### Act 
+* Calculate private key d
+* Name surname encryption
+
 
 2. Message encryption
 
-### bn_sample_34.c
+### bn_sample34_1.c
 1. Message decryption
 2. Message signing
 
-### bn_sample_5.c
+Calculations
+
+$d = 74D806F9F3A62BAE331FFE3F0A68AFE35B3D2E4794148AACBC26AA381CD7D30D$
+$e = 010001 (this hex value equals to decimal 65537) $
+$n = DCBFFE3E51F62E09CE7032E2677A78946A849DC4CDDE3A4D0CB81629242FB1A5$
+$M = "message"$
+$M` = "messag"$
+
+#### Act 
+* Decrypt message using private and public key
+* Message signing to two different texts
+
+### bn_sample4_2.c
 1. Signature Verification
+
+Calculations
+$public_key (e,n)$
+$S = 643D6F34902D9C7EC90CB0B2BCA36C47FA37165C0005CAB026C0542CBDB6802F$
+$e = 010001 (this hex value equals to decimal 65537) $
+$n = AE1CD4DC432798D933779FBD46C6E1247F0CF1233595113AA51B450F18116115$
+$M = "Launch a missile"$
+
+#### Act 
+* Signing verification
+
 
 ## Setup
 Large numbers **bn[^1]** (multiprecision integer arithmetics) library provided by the **openssl [^2]**

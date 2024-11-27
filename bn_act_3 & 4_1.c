@@ -1,4 +1,10 @@
-/* bn_sample.c */
+/*
+            ======================================================
+            + Name        : bn_sample34_1.c                      +
+            + Author      : Christos Z, 		        		 +
+            + Description : RSA crypto			                 +
+            ======================================================
+ */
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

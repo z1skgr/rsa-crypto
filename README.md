@@ -71,6 +71,7 @@ $M = "Launch a missile"$
 
 #### Act 
 * Signing verification
+* Signing verification with modified S (last bit 2F->3F)
 
 
 ## Setup
